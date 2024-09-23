@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 토론 포럼</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #4F86EC;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .category-list {
+            list-style: none;
+            display: flex;
+            margin-left: 900px;
+        }
+
+        .category-list li {
+            margin-right: 20px;
+        }
+
+        .category-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .category-list a:hover {
+            color: #4F86EC;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .discussion-topic {
+            margin-bottom: 20px;
+        }
+
+        .topic-title {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .topic-details {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .add-comment {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .discussion-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .discussion-list li {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .discussion-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+        }
+
+        .discussion-list a:hover {
+            color: #4F86EC;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>도서 토론 포럼</h1>
+    </header>
+
+    <nav>
+        <ul id="list" class="category-list">
+            <li><a href="debate.html">목록</a></li>
+            <li><a href="debate_wr.html">글 작성</a></li>
+            <li><a href="final.html">메인</a></li> 
+            <li><a href="list.html">공지사항</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>토론 주제 목록</h2>
+
+        <ul class="discussion-list">
+            <li>
+                <a href="debate1.html">
+                    <div class="topic-title">나무꾼과 선녀</div>
+                    <div class="topic-details">작성자: 익명 | 등록일: 2023-12-01</div>
+                    <p>'나무꾼과 선녀'에서 나무꾼의 행동에 대해 어떻게 생각하는가?</p>
+                </a>
+            </li>
+            <li>
+                <a href="debate2.html">
+                    <div class="topic-title">장발장</div>
+                    <div class="topic-details">작성자: 익명 | 등록일: 2023-12-02</div>
+                    <p>'장발장'이 빵 한 조각을 훔친 것에 대해 꼭 벌을 주어야만 했을까?</p>
+                </a>
+            </li>
+            <li>
+                <a href="debate3.html">
+                    <div class="topic-title">심청전</div>
+                    <div class="topic-details">작성자: 익명 | 등록일: 2023-12-03</div>
+                    <p>심청은 진정한 효녀인가?</p>
+                </a>
+            </li>
+           
+        </ul>
+    </section>
+
+</body>
+
+</html>

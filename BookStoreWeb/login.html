@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/longin.css">
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <section class="login-form">
+        <h1>BOOK</h1>
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">USER NAME</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">PASSWORD</label>
+            </div>       
+            <div class="btn-area">
+                <button id="btn" type="button">LOGIN</button>
+            </div>    
+        </form>
+        <div class="caption">
+            <a href="">Forgot Password?</a>
+        </div>
+    </section>
+    <script>
+        var loginButton = document.getElementById('btn');
+        var usernameInput = document.getElementById('id');
+        var passwordInput = document.getElementById('pw');
+    
+        loginButton.addEventListener('click', function() {
+            if (usernameInput.value.trim() !== '' && passwordInput.value.trim() !== '') {
+                window.location.href = 'final.html';
+            } else {
+                alert('아이디와 비밀번호를 입력하세요.');
+            }
+        });
+    </script>
+</body>
+</html>

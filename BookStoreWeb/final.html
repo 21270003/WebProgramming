@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+       .today_body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .today_article {
+            background-color: white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .today_h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .today_book-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .today_book {
+            width: calc(40% - 10px); 
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            margin-right: 30px;
+            background-color: #d1d1d1;
+        }
+
+        .today_img {
+            width: 170px; /* 변경된 부분: 이미지 너비 */
+            height: 250px; /* 변경된 부분: 이미지 높이 */
+            margin-right: 10px; /* 추가된 부분: 이미지와 텍스트 사이 여백 조절 */
+        }
+
+        
+    .mod-div {
+        margin-bottom: 20px;
+    }
+
+    .mod-hr {
+        height: 80px;
+        margin: 0 20px;
+        border: none;
+        border-right: 1px solid #ccc;
+    }
+
+    .quick-functions {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .quick-functions div {
+        margin-right: 20px;
+    }
+</style>
+<script>
+    function showWarning() {
+        alert("아직 준비 중인 페이지입니다. 이동이 불가능합니다.");
+    }
+
+    function preventNavigation(event) {
+        event.preventDefault();
+        showWarning();
+    }
+</script>
+<body>
+    <header id="Category">
+        <ul>
+            <li><a href="final.html">Home</a></li>
+            <li><a href="debate.html">debate</a></li>
+            <li>
+                <a href="#">Category</a>
+                <ul class="submenu">
+                    <li><a href="sub01.html">국내도서</a></li>
+                    <li><a href="sub02.html">국외도서</a></li>
+                </ul>
+            </li>
+            <li><a href="list.html">notice</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <br>
+    <div class="search-mode">
+        <input type="text">
+        <div class="icon">
+            <div class="search">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="plus-option">
+                <i class="fas fa-keyboard"></i>
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <ul id="list" class="category-list">  
+            <li><a href="#오늘의 명언">오늘의 명언</a></li>
+            <li><a href="#추천">추천도서</a></li>
+            <li><a href="#화제의 책 소식">화제의 책 소식</a></li>
+            <li><a href="#빠른메뉴">빠른메뉴</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <hr>
+        <article class="today">
+            <br>
+            <h2 id="오늘의 책">오늘의 책 > </h2>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href = "book5.html"><img width="170" height="250" src="media/book5.jpg"></a></th>                          
+                        <th><a href = "engbook2.html"><img width="170" height="250" src="media/engbook2.jpg"></a></th>
+                        <th><a href = "book4.html"><img width="170" height="250" src="media/book4.jpg"></a></th>  
+                        <th><a href = "engbook1.html"><img width="170" height="250" src="media/engbook1.jpg"></a></th>      
+                        <th><a href = "book2.html"><img width="170" height="250" src="media/book2.jpg"></a></th>             
+                    </tr>
+                </thead>
+            </table>
+        </article>
+        <hr>
+        <br>
+        <article>
+            <h2 id = "오늘의 명언">오늘의 명언 ></h2>
+            <br>
+            <p>
+                <strong>당신이 세상을 바꿀 수 없다고 말하는 사람에는 두 종류가 있다. 시도하기를 두려워하는 사람들, 당신이 성공할까 봐 두려워하는 사람들. <br></strong>
+                -레이 고포스 <br>
+            </p>
+        </article>
+        <br>
+        <hr>
+        <br>
+        <article>
+            <h2 id ="추천">추천도서 ></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href = "book1.html"><img width="170" height="250" src="media/book1.jpg"></a></th>              
+                        <th><a href = "book2.html"><img width="170" height="250" src="media/book2.jpg"></a></th>
+                        <th><a href = "book3.html"><img width="170" height="250" src="media/book3.jpg"></a></th>        
+                       
+                    </tr>
+                </thead>
+            </table>
+        </article>
+        <br>
+        <hr>
+        <br>
+        <article class="today_article">
+            <h2 class="today_h2" id="화제의 책 소식">화제의 책 소식 > </h2>
+    
+            <div class="today_book-container">
+                <div class="today_book">
+                    <a href="engbook1.html"><img class="today_img" src="media/engbook1.jpg" alt="Book 1"></a>
+                    <div>
+                        <p>전 세계 32개국 동시 출간!ㅣ『일론 머스크』 유일한 공식 전기 </p>
+                    </div>
+                </div>
+    
+                <div class="today_book">
+                    <a href="engbook2.html"><img class="today_img" src="media/engbook2.jpg" alt="Book 2"></a>
+                    <div>
+                        <p>창의적인 삶으로 나아간 천재들의 비밀</p>
+                    </div>
+                </div>
+    
+                <div class="today_book">
+                    <a href="engbook3.html"><img class="today_img" src="media/engbook3.jpg" alt="Book 3"></a>
+                    <div>
+                        <p>바이러스와의 전쟁에서 인류를 구한 여성!<br>
+                            2020년 노벨 화학상 수상자, 제니퍼 다우드나의 첫 공식 전기
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <br>
+        <hr>
+        <br>
+        <article class="mode-div quick-functions">
+            <div id="빠른메뉴">
+                <p style="font-weight: bold; margin-bottom: 5px;">공지사항 > </p>
+                <li><a href="list.html">[공지]연휴 고객센터 휴무 안내</a></li>
+                <li><a href="list.html">[공지]고객센터 단축근무 양해말씀</a></li>
+                <li><a href="list.html">[공지]모바일 서비스 종료 안내</a></li>
+                <li><a href="list.html">시스템 점검 안내</a></li>
+            </div>
+            <hr class="mod-hr">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <form action="search.html" method="GET" style="display: flex; align-items: center; margin-bottom: 15px;"> 
+                    <label for="search" style="margin-right: 10px;">검색:</label>
+                    <input type="text" id="search" name="search" style="width: 250px; height: 30px; font-size: 16px;" placeholder="검색어를 입력하세요">
+                    <button type="submit" style="width: 50px; height: 30px; font-size: 16px; margin-left: 10px;">검색</button>
+                </form>
+                <div style="display: flex; justify-content: space-around; width: 350px;">
+                    <input type="checkbox" id="check1" name="check1">
+                    <label for="check1">FAQ</label>
+                    <input type="checkbox" id="check2" name="check2">
+                    <label for="check2">공지사항</label>
+                    <input type="checkbox" id="check3" name="check3">
+                    <label for="check3">작성자</label>
+                    <input type="checkbox" id="check4" name="check4">
+                    <label for="check4">서비스 안내</label>
+                </div>
+            </div>
+            <hr class="mod-hr">
+            <div>
+                <p style="font-weight: bold; margin-bottom: 5px;">빠른 기능 영역 ></p>
+                <li><a href="#" onclick="preventNavigation(event)">반품/교환</a></li>
+                <li><a href="#" onclick="preventNavigation(event)">신청 증빙서류 신청</a></li>
+                <li><a href="#" onclick="preventNavigation(event)">미배송 신고</a></li>
+                <li><a href="#" onclick="preventNavigation(event)">입금신고</a></li>
+            </div>
+            <hr class="mod-hr">
+            <div>
+                <p style="font-weight: bold; margin-bottom: 5px;">출판사, 판매자 안내 ></p>
+                <li><a href="#" onclick="preventNavigation(event)">제휴 & 마케팅 안내</a></li>
+                <li><a href="#" onclick="preventNavigation(event)">출판사/공급사 안내</a></li>
+                <li><a href="#" onclick="preventNavigation(event)">광고 안내</a></li>
+                <li><a href="#" onclick="preventNavigation(event)">학교/기업/기관 대량구매</a></li>
+            </div>
+        </article>
+        
+        
+        <br>
+        <hr>
+        <br>
+    </section>
+   
+</body>
+</html>

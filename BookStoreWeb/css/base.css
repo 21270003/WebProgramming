@@ -1,0 +1,135 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 카테고리 */
+#Category {
+    background: #4F86EC; 
+    margin: 0 auto; 
+    text-align: center; 
+    position: relative;
+    z-index: 1;
+    height: 40px; 
+}
+
+#Category ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block; 
+    text-align: left; 
+}
+
+#Category ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 15px; 
+    position: relative;
+    z-index: 1;
+}
+
+#Category ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#Category ul li a:hover {
+    color: #f1be6c; 
+}
+
+#Category ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #94a9ff;
+    z-index: 2;
+    border-radius: 0 0 10px 10px; 
+}
+
+#Category ul li:hover ul {
+    display: block;
+}
+
+/* 검색  */
+.search-mode {
+    position: relative;
+    width: 400px;
+    height: 40px; 
+    margin: 10px auto;
+}
+
+.search-mode input {
+    border: 1px solid #F1F1F1;
+    border-radius: 20px; 
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.search-mode .icon {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    left: 10px;
+}
+
+.search-mode .icon i,
+.search-mode .plus-option i {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #808080;
+}
+
+.search-mode .plus-option i:nth-child(2) {
+    color: #4F86EC;
+}
+
+/* 페이지 전체 */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.category-list {
+    list-style: none;
+    display: flex;
+    margin-left: 970px;
+}
+
+.category-list li {
+    margin-right: 20px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.category-list a:hover {
+    color: #4F86EC;
+}
+
+section {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+article table {
+    margin: 0 auto;
+    border-spacing: 20px; 
+    border-collapse: separate;
+}
+
+
